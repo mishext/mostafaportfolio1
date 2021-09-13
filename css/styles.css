@@ -11,6 +11,7 @@ html {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   color: white;
+  /* overflow-y: hidden; */
 }
 
 .header {
@@ -250,14 +251,14 @@ html {
   font-size: 25px;
   color: black;
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   padding-bottom: 80px;
 }
 
-.resume-p2 a{
+.resume-p2 a {
   color: #ff4500;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-decoration: none;
 }
 
@@ -294,7 +295,8 @@ html {
 }
 .services-container {
   background-color: rgba(128, 128, 128, 0.219);
-  height: 90vh;
+  /* height: 120vh; */
+  padding-bottom: 150px;
 }
 .services-container-img {
   display: grid;
@@ -325,7 +327,7 @@ html {
 }
 .services-layout2 {
   width: 300px;
-  position:absolute;
+  position: absolute;
   margin-top: 50px;
 }
 
@@ -380,7 +382,6 @@ html {
   margin-top: 445px;
 }
 
-
 .footer {
   background-color: #171718;
   height: 45vh;
@@ -390,8 +391,14 @@ html {
 }
 
 .footer-sec1 {
-  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  /* padding-left: 150px; */
 }
+
 .footer-sec1 ul {
   text-decoration: none;
   list-style: none;
@@ -435,6 +442,12 @@ html {
 .footer-sec2 {
   padding-left: 150px;
 }
+.footer-sec3 {
+  display: flex;
+}
+.footer-sec7 {
+  margin-left: 80px;
+}
 
 .footer-sec2-p1 {
   margin-bottom: 10px;
@@ -465,4 +478,50 @@ html {
 
 .footer-links li a {
   font-size: 15px;
+}
+
+@media screen and (max-width: 1190px) {
+  * {
+    overflow-x: hidden;
+  }
+  .header-desc {
+    margin-left: 50px;
+  }
+  .photo-layout {
+    width: 40%;
+    padding-left: 20px;
+    /* padding-left: 20px; */
+  }
+  .aboutme {
+    padding-top: 10px;
+    align-items: flex-start;
+    align-self: flex-start;
+    width: 60%;
+  }
+  .resmue-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services-container-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .flex-services2 {
+    padding-top: 100px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .footer-sec2 {
+    padding-left: 120px;
+  }
+  .footer-links {
+    grid-template-columns: repeat(2, 150px);
+    /* width: 50%; */
+  }
+  .footer-links li {
+    padding-right: 0px;
+  }
 }
