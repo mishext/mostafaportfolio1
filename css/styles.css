@@ -97,14 +97,14 @@ html {
 }
 
 .desc-button {
-  text-decoration: none;
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  text-decoration: none;
+  text-align: center;
 }
 .h-button {
   text-align: center;
