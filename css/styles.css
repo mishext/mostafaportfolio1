@@ -98,14 +98,22 @@ html {
 
 .desc-button {
   text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 .h-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background-color: #ff4500;
-  padding: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 7px;
+  padding-left: 7px;
+
   border-radius: 40px;
   width: 150px;
   font-weight: bold;
